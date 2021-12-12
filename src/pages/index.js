@@ -342,6 +342,8 @@ function UseCaseTabs() {
                                 <p className="content">
                                     A usage of cohort analysis in finance analytics can be retention analysis that is to
                                     analyze users' actions to understand how and when customers churn.
+                                </p>
+                                <p className="content">
                                     Analyzing the retention rate is critical to learning how to maintain profitable
                                     customers and new user acquisition rates.
                                 </p>
