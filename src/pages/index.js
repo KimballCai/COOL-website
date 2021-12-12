@@ -50,7 +50,7 @@ function IntroHeader() {
         <Section background="dark" className="IntroHeader">
             <div className="socialLinks">
                 <a href="https://twitter.com/" className="social-button twitter-follow-button">
-                    <div className="icon" />
+                    <div className="icon"/>
                     Follow
                 </a>
                 <div className="social-button github-button">
@@ -83,7 +83,7 @@ function IntroHeader() {
                     </div>
                 </div>
                 <div className="column right">
-                    <img className="logo-img" alt="Logo" src="../assets/icons/svg/p1.svg" />
+                    <img className="logo-img" alt="Logo" src="../assets/icons/svg/p1.svg"/>
                 </div>
             </div>
         </Section>
@@ -182,7 +182,7 @@ function Feature({path, title, description}) {
                 {/*<Svg className="featureSvg onpure_title" alt={title} />*/}
                 {/*<span className="onpure_title">here</span>*/}
                 {/*<iconGr.GrInstall className="featureSvg" alt={title} />*/}
-                <img className="icon-img onpure_title" src={useBaseUrl(path)} />
+                <img className="icon-img onpure_title" src={useBaseUrl(path)}/>
             </div>
             <span className="line"></span>
             <div className="text-center onpure_rest">
@@ -313,7 +313,7 @@ function UseCaseTabs() {
                                 <p className="class">Healthcare</p>
                                 <h2 className="title"> Drug Effect Analysis</h2>
                                 <p className="content">
-                                    A usage of cohort analysis in healthcare analtics can be
+                                    A usage of cohort analysis in healthcare analytics can be
                                     side-effect evaluation of a tested drug in clinical trials,
                                     where the clinicians need to distinguish the effectiveness of
                                     new medicines (e.g., Medicine A) on a certain feature (e.g.,
@@ -328,8 +328,24 @@ function UseCaseTabs() {
                                 ['panel_active']: opened === 'finance',
                             })}>
                             <div className="video">
+                                <video
+                                    muted
+                                    autoPlay
+                                    loop
+                                    playsInline
+                                    src={useBaseUrl(`assets/videos/CohortAnalysis-finance.mp4`)}
+                                />
                             </div>
-                            <div className="panel_items">On going.</div>
+                            <div className="panel_items">
+                                <p className="class">Finance</p>
+                                <h2 className="title"> Retention Analysis</h2>
+                                <p className="content">
+                                    A usage of cohort analysis in finance analytics can be retention analysis that is to
+                                    analyze users' actions to understand how and when customers churn.
+                                    Analyzing the retention rate is critical to learning how to maintain profitable
+                                    customers and new user acquisition rates.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -379,7 +395,9 @@ function Demostration() {
                     <p className="class">Healthcare</p>
                     <h2>Using COOL to conduct cohort analysis on healthcare </h2>
                     <p>
-                        Here is the latest video illustrating a general example of how to conduct cohort analysis in healthcare. In this example, we measure the effect of a certain medical drug on patients of different age groups.
+                        Here is the latest video illustrating a general example of how to conduct cohort analysis in
+                        healthcare. In this example, we measure the effect of a certain medical drug on patients of
+                        different age groups.
                     </p>
                     <p>
                         Feel free try out our Online website application of COOL by clicking "Try Our Demo".
@@ -433,13 +451,13 @@ export default function Home() {
             <Head>
                 <title>{customFields.title}</title>
             </Head>
-            <IntroHeader />
-            <Architecture />
-            <Features />
-            <UseCaseTabs />
-            <TechPre />
-            <Demostration />
-            <TryOurCode />
+            <IntroHeader/>
+            <Architecture/>
+            <Features/>
+            <UseCaseTabs/>
+            <TechPre/>
+            <Demostration/>
+            <TryOurCode/>
         </Layout>
     );
 }
