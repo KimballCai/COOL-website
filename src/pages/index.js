@@ -207,8 +207,8 @@ function UseCaseTabs() {
             <div className="container">
                 <h2 className="title">Use-Cases</h2>
                 <p className="desc">
-                    We can use COOL in many applications, such as Healthcare, Finance, CRM (customer relationship
-                    management) Analytics, Fraud Detection, and Anomaly Analysis, etc.
+                    We can use COOL in many applications, such as Healthcare, Finance, CRM (Customer Relationship
+                    Management) Analytics, Fraud Detection, and Anomaly Analysis, etc.
                 </p>
                 <div className="content">
                     <div className="buttons">

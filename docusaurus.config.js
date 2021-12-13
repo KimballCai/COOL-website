@@ -27,11 +27,12 @@ const config = {
           // showLastUpdateAuthor: true,
           // showLastUpdateTime: true,
           sidebarPath: require.resolve('./sidebars.js'),
-
+          editUrl: "https://github.com/KimballCai/COOL-website/edit/main/",
         },
         blog: {
           blogSidebarTitle: 'All Blog Posts',
           showReadingTime: true,
+          editUrl: "https://github.com/KimballCai/COOL-website/edit/main/",
         },
         theme: {
           customCss: [
