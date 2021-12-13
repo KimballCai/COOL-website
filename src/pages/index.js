@@ -4,7 +4,6 @@ import Layout from '@theme/Layout';
 import CodeBlock from '@theme/CodeBlock';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import Link from '@docusaurus/Link';
 import GitHubButton from 'react-github-btn';
 
 import customFields from '../config/customFields';
@@ -80,11 +79,12 @@ function Architecture() {
                 <img
                     className="arch-img"
                     alt=""
-                    // src={useBaseUrl('assets/icons/svg/p2.svg')}
-                    src={useBaseUrl('assets/images/arch.gif')}
+                    src={useBaseUrl('assets/images/arch.png')}
                 />
                 <p className="arch-p">
-                    COOL is a very efficient and effective OLAP engine for conducting cohort and OLAP analysis
+                    COOL is a very <span className="color-p">efficient</span> and <span
+                    className="color-p">effective</span> OLAP engine for conducting <span
+                    className="color-p">cohort</span> and <span className="color-p">OLAP</span> analysis
                     for time series data.
                 </p>
             </div>
@@ -95,7 +95,6 @@ function Architecture() {
 const FeatureList = [
     {
         title: 'Easy to Use',
-        // path: iconGr.GrDeploy,
         path: 'assets/icons/launch.png',
         description: (
             <>
@@ -105,53 +104,49 @@ const FeatureList = [
     },
     {
         title: 'Near Real-time Responses',
-        // Svg: iconBi.BiBroadcast,
         path: 'assets/icons/response.png',
         description: (
-            <>Process cohort queries in near real-time analytical responses.</>
+            <>Process cohort queries in <span className="color-p">near real-time analytical responses</span>.</>
         ),
     },
     {
         title: 'Specialized Storage Layout',
-        // Svg: iconRi.RiLayoutMasonryLine,
         path: 'assets/icons/layout.png',
         description: (
             <>
-                A specialized storage layout optimized for fast query processing and
+                A <span className="color-p">specialized storage layout</span> optimized for fast query processing and
                 reduced space consumption.
             </>
         ),
     },
     {
         title: 'Self-designed Semantics',
-        // Svg: iconGr.GrSemantics,
         path: 'assets/icons/semantic.png',
         description: (
             <>
-                Define specialized semantics for the cohort query, which can simplify
-                its complexity and improve its functionality.
+                <span className="color-p">Self-designed semantics</span> for the cohort query, which can simplify its
+                complexity and improve its functionality.
             </>
         ),
     },
     {
         title: 'Flexible Integration',
-        // Svg: iconGr.GrResources,
         path: 'assets/icons/integration.png',
         description: (
             <>
-                Flexible integration with other data systems via common data
-                formats（e.g., CSV, Parquet, Avro, and Arrow).
+                Flexible integration with other data systems via common data formats（e.g., <span
+                className="color-p">CSV</span>, <span className="color-p">Parquet</span>, <span
+                className="color-p">Avro</span>, and <span className="color-p">Arrow</span>).
             </>
         ),
     },
     {
         title: 'Artificial Intelligence Model',
-        // Svg: iconGr.GrMemory,
         path: 'assets/icons/model.png',
         description: (
             <>
-                Utilize COOL's cohort results and findings to facilitate building
-                artificial intelligence models.
+                Utilize COOL's cohort results and findings to facilitate building <span className="color-p">artificial intelligence models</span>.
+
             </>
         ),
     },
@@ -161,9 +156,6 @@ function Feature({path, title, description}) {
     return (
         <div className={clsx('col col--4 onpure_bg')}>
             <div className="text-center onpure">
-                {/*<Svg className="featureSvg onpure_title" alt={title} />*/}
-                {/*<span className="onpure_title">here</span>*/}
-                {/*<iconGr.GrInstall className="featureSvg" alt={title} />*/}
                 <img className="icon-img onpure_title" src={useBaseUrl(path)}/>
             </div>
             <span className="line"></span>

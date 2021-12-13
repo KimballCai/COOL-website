@@ -259,6 +259,10 @@ html[data-theme="dark"] .Section p a {
   font-style: italic;
   margin: 0 auto;
   justify-content: center;
+
+  .color-p{
+    color: var(--orange);
+  }
 }
 
 
@@ -318,6 +322,11 @@ html[data-theme="dark"] .Section p a {
 }
 .Features .onpure_rest{
   margin-top:40px;
+
+  .color-p{
+    white-space: nowrap;
+    color: var(--orange);
+  }
 }
 
 
