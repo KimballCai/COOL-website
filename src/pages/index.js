@@ -102,7 +102,7 @@ function Architecture() {
                     src={useBaseUrl('assets/images/arch.gif')}
                 />
                 <p className="arch-p">
-                    COOL is an efficient and effective tool specialized for conducting cohort analysis
+                    COOL is a very efficient and effective OLAP engine for conducting cohort and OLAP analysis
                     for time series data.
                 </p>
             </div>
@@ -225,8 +225,8 @@ function UseCaseTabs() {
             <div className="container">
                 <h2 className="title">Use-Cases</h2>
                 <p className="desc">
-                    We can employ COOL for many scenarios, such as Healthcare, Finance,
-                    etc.
+                    We can use COOL in many applications, such as Healthcare, Finance, CRM (customer relationship
+                    management) Analytics, Fraud Detection, and Anomaly Analysis, etc.
                 </p>
                 <div className="content">
                     <div className="buttons">
