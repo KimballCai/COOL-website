@@ -170,27 +170,27 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Apache[TODO]',
-            items: [
-              {
-                label: 'Foundation',
-                href: 'https://apache.org/',
-              },
-              {
-                label: 'License',
-                href: 'https://apache.org/licenses',
-              },
-              {
-                label: 'Events',
-                href: 'https://apache.org/current-event',
-              },
-              {
-                label: 'Thanks',
-                href: 'https://apache.org/thanks.html',
-              },
-            ],
-          },
+          // {
+          //   title: 'Apache[TODO]',
+          //   items: [
+          //     {
+          //       label: 'Foundation',
+          //       href: 'https://apache.org/',
+          //     },
+          //     {
+          //       label: 'License',
+          //       href: 'https://apache.org/licenses',
+          //     },
+          //     {
+          //       label: 'Events',
+          //       href: 'https://apache.org/current-event',
+          //     },
+          //     {
+          //       label: 'Thanks',
+          //       href: 'https://apache.org/thanks.html',
+          //     },
+          //   ],
+          // },
         ],
         logo: {
           alt: 'COOL Open Source Logo',
