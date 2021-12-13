@@ -27,24 +27,6 @@ function Section({
     return <El className={`Section ${className} ${background}`}>{children}</El>;
 }
 
-function HomepageHeader() {
-    return (
-        <header className={clsx('hero hero--primary', 'heroBanner')}>
-            <div className="container">
-                <h1 className="hero__title">{customFields.title}</h1>
-                <p className="hero__subtitle">{customFields.tagline}</p>
-                <div className='buttons'>
-                    <Link
-                        className="button button--secondary button--lg"
-                        to="/docs/intro">
-                        Docusaurus Tutorial - 5min ⏱️
-                    </Link>
-                </div>
-            </div>
-        </header>
-    );
-}
-
 function IntroHeader() {
     return (
         <Section background="dark" className="IntroHeader">
@@ -55,7 +37,7 @@ function IntroHeader() {
                 </a>
                 <div className="social-button github-button">
                     <GitHubButton
-                        href={customFields.githubUrl}
+                        href={customFields.githubAppUrl}
                         data-icon="octicon-star"
                         data-size="large"
                         aria-label="Star COOL on GitHub">
